@@ -1,0 +1,13 @@
+.tituloCard {
+    text-align: center;
+    font-weight: 450;
+    color: rgb(39, 39, 39);
+}
+
+.materialize-card:hover {
+    background-color: rgb(175, 175, 175);
+    transition: 700ms;
+    & .tituloCard {
+        color: rgb(255, 255, 255);
+    }
+}

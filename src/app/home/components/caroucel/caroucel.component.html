@@ -1,0 +1,11 @@
+<ngb-carousel *ngIf="images" class="w-auto p-0 m-0">
+    <ng-template ngbSlide *ngFor="let img of images; let index=index">
+        <div class="picsum-img-wrapper">
+            <img class="myImg" [src]="img" alt="My image {{index + 1}} description">
+        </div>
+        <div class="carousel-caption">
+            <h3>{{ tituloImagem[index] }}</h3>
+            <h5 style="text-align: justify;">{{ textoDescritivo[index] }}</h5>
+        </div>
+    </ng-template>
+</ngb-carousel>

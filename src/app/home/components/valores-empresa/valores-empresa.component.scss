@@ -1,0 +1,17 @@
+.materialize-ripple-element.materialize-collapsible-title{
+    background-color: #343a40 !important;
+    color: rgb(224, 224, 224);
+}
+
+.materialize-icon {
+    color: rgb(224, 224, 224);
+}
+
+.materialize-ripple-element:hover {
+    background-color:  #d0d7dd !important;
+    color: rgb(46, 46, 46);
+    transition: 350ms;
+    & .materialize-icon{
+        color:rgb(46, 46, 46);
+    }
+}
