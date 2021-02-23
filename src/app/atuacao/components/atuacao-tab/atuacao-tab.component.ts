@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-
 @Component({
   selector: 'app-atuacao-tab',
   templateUrl: './atuacao-tab.component.html',
@@ -8,9 +7,10 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class AtuacaoTabComponent implements OnInit {
 
-  constructor() { }
-
   ngOnInit(): void {
+
   }
+
+  constructor() { }
 
 }

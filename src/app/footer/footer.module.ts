@@ -1,3 +1,4 @@
+import { InformacoesModule } from './../informacoes/informacoes.module';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -7,7 +8,8 @@ import { RodapeComponent } from './components/rodape/rodape.component';
   declarations: [RodapeComponent],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    InformacoesModule
   ],
   exports: [RodapeComponent]
 })

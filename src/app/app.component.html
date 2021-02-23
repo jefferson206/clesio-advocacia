@@ -1,29 +1,31 @@
 <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
   <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" (click)="isCollapsed = !isCollapsed">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link d-flex" routerLink="tela-inicial">
+    <div class="collapse navbar-collapse" [ngbCollapse]="isCollapsed">
+      <div class="navbar-nav" style="width: 100%;">
+        <a class="nav-link d-flex mr-4" routerLink="tela-inicial">
           <i class="bi-house-door-fill pr-2"></i>
           <span style="margin-top: 3px;"> Tela Inicial </span>
         </a>
-        <a class="nav-link d-flex ml-4" routerLink="area-atuacao">
+        <a class="nav-link d-flex mr-4" routerLink="area-atuacao">
           <i class="bi-briefcase-fill pr-2"></i>
           <span style="margin-top: 3px;"> Área de Atuação </span>
         </a>
-       
-        <a class="nav-link d-flex ml-4" routerLink="/">
+
+        <a class="nav-link d-flex mr-4" routerLink="sobre-nos">
           <i class="bi-people-fill pr-2"></i>
           <span style="margin-top: 3px;"> Quem Somos </span>
         </a>
 
-        <a class="nav-link d-flex ml-4" routerLink="/">
+        <a class="nav-link d-flex" routerLink="informacoes">
           <i class="bi-info-circle-fill pr-2"></i>
           <span style="margin-top: 3px;"> Informações </span>
         </a>
+      </div>
+      <div class="d-flex" routerLink="tela-inicial" style="cursor: pointer;">
+        <img src="assets/images/outros/logo-advocacia.png" >
       </div>
     </div>
   </div>

@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/clesio-advocacia",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

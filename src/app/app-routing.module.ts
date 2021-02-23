@@ -17,6 +17,14 @@ const routes: Routes = [
     loadChildren: () => import('./atuacao/atuacao.module').then(module => module.AtuacaoModule)
   },
   {
+    path: 'sobre-nos',
+    loadChildren: () => import('./sobre-nos/sobre-nos.module').then(module => module.SobreNosModule)
+  },
+  {
+    path: 'informacoes',
+    loadChildren: () => import('./informacoes/informacoes.module').then(module => module.InformacoesModule)
+  },
+  {
     path: '**',
     redirectTo: 'tela-inicial'
   },
